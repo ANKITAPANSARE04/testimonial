@@ -15,6 +15,7 @@ html {
 }
 .testimonial-container {
   text-align: center;
+  position: relative;
   padding: 25px 0px;
 }
 h1 {
@@ -38,7 +39,7 @@ h1 {
 
 .testimonials {
   margin-top: -30px;
-  padding-left: 180px;
+  padding-left: 190px;
   display: flex;
   gap: 30px;
   transition: transform 1s ease;
@@ -51,8 +52,8 @@ h1 {
   background-color: #282828;
   border-radius: 15px;
   padding: 30px;
-  min-width: 260px;
-  max-width: 260px;
+  min-width: 240px;
+  max-width: 240px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   transform: translateY(30px);
   transition: transform 0.5s ease-in-out;
@@ -82,7 +83,15 @@ p {
 .right {
   transform: translateY(120px); /* Move right card down */
 }
-
+.inner-shadow {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  box-shadow: rgba(0, 0, 3, 0.9) 0px -10px 60px 42px inset,
+    rgba(0, 0, 0, 0.3) 0px 0px 36px -18px inset;
+}
 /*  
 @media screen and (max-width: 1024px) {
   .testimonials-wrapper {
